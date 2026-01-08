@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from "@voidzero-dev/vite-plus/test";
 import { ObjectId } from "mongodb";
 import * as AdminUidsDal from "../../../src/dal/admin-uids";
 

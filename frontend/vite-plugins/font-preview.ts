@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "@voidzero-dev/vite-plus";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";

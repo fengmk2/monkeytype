@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from "@voidzero-dev/vite-plus/test";
 import defaultResultFilters from "../../../src/ts/constants/default-result-filters";
 import { mergeWithDefaultFilters } from "../../../src/ts/elements/account/result-filters";
 

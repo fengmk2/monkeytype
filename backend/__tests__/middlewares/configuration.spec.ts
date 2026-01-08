@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, afterEach, vi } from "@voidzero-dev/vite-plus/test";
 import { RequireConfiguration } from "@monkeytype/contracts/require-configuration/index";
 import { verifyRequiredConfiguration } from "../../src/middlewares/configuration";
 import { Configuration } from "@monkeytype/schemas/configuration";

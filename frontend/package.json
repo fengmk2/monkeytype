@@ -4,8 +4,8 @@
   "license": "GPL-3.0",
   "type": "module",
   "scripts": {
-    "lint": "oxlint . --type-aware --type-check && oxlint . -c .oxlintrc-plugin.json",
-    "lint-fast": "oxlint .",
+    "lint": "vite lint . --type-aware --type-check && vite lint . -c .oxlintrc-plugin.json",
+    "lint-fast": "vite lint .",
     "lint-json": "eslint static/**/*.json",
     "check-assets": "tsx ./scripts/check-assets.ts",
     "audit": "vite-bundle-visualizer",
@@ -15,8 +15,8 @@
     "madge": " madge --circular --extensions ts ./src",
     "start": "vite preview --port 3000",
     "dev": "vite dev",
-    "test": "vitest run",
-    "test-coverage": "vitest run --coverage",
+    "test": "vite test run",
+    "test-coverage": "vite test run --coverage",
     "dev-test": "concurrently --kill-others \"vite dev\" \"vitest\"",
     "tsc": "tsc",
     "docker": "docker compose -f docker/compose.dev.yml up"
@@ -83,29 +83,28 @@
     "madge": "8.0.0",
     "magic-string": "0.30.17",
     "normalize.css": "8.0.1",
-    "oxlint": "1.38.0",
-    "oxlint-tsgolint": "0.10.1",
     "postcss": "8.4.31",
     "sass": "1.70.0",
     "subset-font": "2.3.0",
     "tsx": "4.16.2",
     "typescript": "5.9.3",
     "unplugin-inject-preload": "3.0.0",
-    "vite": "7.1.12",
+    "vite": "catalog:",
     "vite-bundle-visualizer": "1.2.1",
     "vite-plugin-filter-replace": "0.1.14",
     "vite-plugin-html-inject": "1.1.2",
     "vite-plugin-inspect": "11.3.3",
     "vite-plugin-minify": "2.1.0",
     "vite-plugin-pwa": "1.1.0",
-    "vitest": "4.0.15"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "lint-staged": {
     "*": [
-      "oxfmt --no-error-on-unmatched-pattern"
+      "vite fmt --no-error-on-unmatched-pattern"
     ],
     "*.{ts,js}": [
-      "oxlint --type-aware --type-check"
+      "vite lint --type-aware --type-check"
     ]
   },
   "browserslist": [
@@ -114,6 +113,6 @@
     "not dead"
   ],
   "engines": {
-    "node": "24.11.0 || 22.21.0"
+    "node": "24.11.0 || ^22.21.0"
   }
 }

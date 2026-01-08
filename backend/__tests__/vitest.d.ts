@@ -1,4 +1,4 @@
-import type { Assertion, AsymmetricMatchersContaining } from "vitest";
+import type { Assertion, AsymmetricMatchersContaining } from "@voidzero-dev/vite-plus/test";
 import type { Test as SuperTest } from "supertest";
 import MonkeyError from "../src/utils/error";
 
@@ -18,7 +18,7 @@ interface ThrowMatcher {
   }) => MatcherResult;
 }
 
-declare module "vitest" {
+declare module "@voidzero-dev/vite-plus/test" {
   interface Assertion<T = any> extends RestRequestMatcher<T>, ThrowMatcher {}
   interface AsymmetricMatchersContaining
     extends RestRequestMatcher, ThrowMatcher {}

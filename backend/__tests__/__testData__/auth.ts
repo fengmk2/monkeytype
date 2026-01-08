@@ -1,4 +1,4 @@
-import { expect, vi } from "vitest";
+import { expect, vi } from "@voidzero-dev/vite-plus/test";
 import { Configuration } from "@monkeytype/schemas/configuration";
 import { randomBytes } from "crypto";
 import { hash } from "bcrypt";

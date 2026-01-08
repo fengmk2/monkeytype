@@ -4,6 +4,7 @@ env:
   PNPM_VERSION: "9.6.0"
   NODE_VERSION: "24.11.0"
   RECAPTCHA_SITE_KEY: "6Lc-V8McAAAAAJ7s6LGNe7MBZnRiwbsbiWts87aj"
+  VP_TOKEN: ${{ secrets.VP_TOKEN }}
 
 permissions:
   contents: read

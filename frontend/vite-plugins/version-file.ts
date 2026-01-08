@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "@voidzero-dev/vite-plus";
 import path from "node:path";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 export function versionFile(options: { clientVersion: string }): Plugin {

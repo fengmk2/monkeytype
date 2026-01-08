@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "@voidzero-dev/vite-plus";
 import { EnvConfig } from "virtual:env-config";
 
 const virtualModuleId = "virtual:env-config";

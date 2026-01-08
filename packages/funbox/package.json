@@ -11,11 +11,11 @@
   "scripts": {
     "dev": "tsup-node --watch",
     "build": "npm run madge && tsup-node",
-    "test": "vitest run",
+    "test": "vite test run",
     "madge": " madge --circular --extensions ts ./src",
     "ts-check": "tsc --noEmit",
-    "lint": "oxlint . --type-aware --type-check",
-    "lint-fast": "oxlint ."
+    "lint": "vite lint . --type-aware --type-check",
+    "lint-fast": "vite lint ."
   },
   "dependencies": {
     "@monkeytype/schemas": "workspace:*",
@@ -25,10 +25,9 @@
     "@monkeytype/tsup-config": "workspace:*",
     "@monkeytype/typescript-config": "workspace:*",
     "madge": "8.0.0",
-    "oxlint": "1.38.0",
-    "oxlint-tsgolint": "0.10.1",
     "tsup": "8.4.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.15"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   }
 }

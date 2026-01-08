@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, afterEach, vi } from "@voidzero-dev/vite-plus/test";
 import { z } from "zod";
 import { LocalStorageWithSchema } from "../../src/ts/utils/local-storage-with-schema";
 

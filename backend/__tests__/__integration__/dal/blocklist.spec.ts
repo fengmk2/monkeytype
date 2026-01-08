@@ -6,7 +6,7 @@ import {
   beforeEach,
   afterEach,
   vi,
-} from "vitest";
+} from "@voidzero-dev/vite-plus/test";
 import { ObjectId } from "mongodb";
 import * as BlacklistDal from "../../../src/dal/blocklist";
 

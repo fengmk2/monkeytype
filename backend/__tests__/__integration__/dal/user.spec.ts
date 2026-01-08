@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from "vitest";
+import { describe, it, expect, vi } from "@voidzero-dev/vite-plus/test";
 
 import * as UserDAL from "../../../src/dal/user";
 import * as UserTestData from "../../__testData__/users";

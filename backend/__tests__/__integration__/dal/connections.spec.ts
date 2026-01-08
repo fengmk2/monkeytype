@@ -6,7 +6,7 @@ import {
   beforeAll,
   beforeEach,
   afterEach,
-} from "vitest";
+} from "@voidzero-dev/vite-plus/test";
 import { ObjectId } from "mongodb";
 
 import * as ConnectionsDal from "../../../src/dal/connections";

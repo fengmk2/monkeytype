@@ -1,4 +1,4 @@
-import type { Assertion, AsymmetricMatchersContaining } from "vitest";
+import type { Assertion, AsymmetricMatchersContaining } from "@voidzero-dev/vite-plus/test";
 import { TestActivityDay } from "../src/ts/elements/test-activity-calendar";
 
 interface ActivityDayMatchers<R = TestActivityDay> {
@@ -8,7 +8,7 @@ interface ActivityDayMatchers<R = TestActivityDay> {
   toBeFiller: () => ActivityDayMatchers<R>;
 }
 
-declare module "vitest" {
+declare module "@voidzero-dev/vite-plus/test" {
   interface Assertion<T = any> extends ActivityDayMatchers<T> {}
   interface AsymmetricMatchersContaining extends ActivityDayMatchers {}
 }

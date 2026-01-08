@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, afterEach, vi } from "@voidzero-dev/vite-plus/test";
 import * as Strings from "../../src/ts/utils/strings";
 
 describe("string utils", () => {

@@ -45,8 +45,8 @@
     "hotfix-fe": "monkeytype-release --hotfix --fe",
     "hotfix-be": "monkeytype-release --hotfix --be",
     "hotfix-dry": "monkeytype-release --hotfix --dry",
-    "format-check": "oxfmt . --check",
-    "format-fix": "oxfmt .",
+    "format-check": "vite fmt . --check",
+    "format-fix": "vite fmt .",
     "lint-json-assets": "cd frontend && eslint \"./static/**/*.json\"",
     "check-assets": "turbo check-assets --filter @monkeytype/frontend",
     "check-assets-quotes": "turbo check-assets --filter @monkeytype/frontend  -- quotes",
@@ -65,23 +65,21 @@
     "knip": "2.19.2",
     "lint-staged": "13.2.3",
     "only-allow": "1.2.1",
-    "oxfmt": "0.23.0",
-    "oxlint": "1.38.0",
-    "oxlint-tsgolint": "0.10.1",
     "prettier": "3.7.1",
     "turbo": "2.5.6",
-    "vitest": "4.0.15"
+    "vitest": "catalog:",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "lint-staged": {
     "*": [
-      "oxfmt --no-error-on-unmatched-pattern"
+      "vite fmt --no-error-on-unmatched-pattern"
     ],
     "*.{ts,js}": [
-      "oxlint --type-aware --type-check"
+      "vite lint --type-aware --type-check"
     ]
   },
   "engines": {
-    "node": "24.11.0 || 22.21.0"
+    "node": "24.11.0 || ^22.21.0"
   },
   "packageManager": "pnpm@9.6.0"
 }

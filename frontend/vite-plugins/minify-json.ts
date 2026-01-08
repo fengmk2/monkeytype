@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "@voidzero-dev/vite-plus";
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 

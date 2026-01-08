@@ -1,4 +1,4 @@
-import { expect } from "vitest";
+import { expect } from "@voidzero-dev/vite-plus/test";
 import MonkeyError from "../../src/utils/error";
 import { MatcherResult } from "../vitest";
 

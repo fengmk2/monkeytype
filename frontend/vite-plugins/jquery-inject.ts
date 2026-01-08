@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "@voidzero-dev/vite-plus";
 import MagicString from "magic-string";
 
 export function jqueryInject(): Plugin {

@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, afterEach, vi } from "@voidzero-dev/vite-plus/test";
 import { setup } from "../../__testData__/controller-test";
 import { ObjectId } from "mongodb";
 import * as LeaderboardDal from "../../../src/dal/leaderboards";

@@ -1,4 +1,4 @@
-import { vi } from "vitest";
+import { vi } from "@voidzero-dev/vite-plus/test";
 import $ from "jquery";
 import { ElementsWithUtils, ElementWithUtils } from "../src/ts/utils/dom";
 

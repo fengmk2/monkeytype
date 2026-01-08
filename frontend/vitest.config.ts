@@ -1,4 +1,4 @@
-import { defineConfig, UserWorkspaceConfig } from "vitest/config";
+import { defineConfig, UserWorkspaceConfig } from "@voidzero-dev/vite-plus";
 import { languageHashes } from "./vite-plugins/language-hashes";
 import { envConfig } from "./vite-plugins/env-config";
 

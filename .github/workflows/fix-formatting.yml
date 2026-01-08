@@ -3,6 +3,7 @@ name: Fix formatting
 env:
   PNPM_VERSION: "9.6.0"
   NODE_VERSION: "24.11.0"
+  VP_TOKEN: ${{ secrets.VP_TOKEN }}
 
 permissions:
   contents: write

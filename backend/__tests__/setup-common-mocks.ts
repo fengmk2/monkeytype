@@ -1,4 +1,4 @@
-import { vi } from "vitest";
+import { vi } from "@voidzero-dev/vite-plus/test";
 
 export function setupCommonMocks() {
   vi.mock("../src/utils/logger", () => ({

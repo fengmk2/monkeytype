@@ -212,14 +212,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Check lint
-        run: npm run lint-fast-fe && npm run lint-fe
+      # - name: Check lint
+      #   run: npm run lint-fast-fe && npm run lint-fe
 
       - name: Build
         run: npm run build-fe
 
       - name: Test
         run: npm run test-fe
+
+      - name: Check lint
+        run: npm run lint-fast-fe && npm run lint-fe
 
   ci-assets:
     name: ci-assets

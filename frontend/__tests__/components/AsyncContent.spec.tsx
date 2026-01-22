@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@solidjs/testing-library";
 import { createResource, Resource } from "solid-js";
-import { describe, it, expect } from "vitest";
+import { describe, it, expect } from "vite-plus/test";
 
 import AsyncContent from "../../src/ts/components/common/AsyncContent";
 

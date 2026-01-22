@@ -13,7 +13,7 @@ import { ChartJs } from "../common/ChartJs";
 
 function H2(props: { icon: string; text: string }): JSXElement {
   return (
-    <h2 class="text-sub flex place-items-center gap-4 pb-4 text-4xl">
+    <h2 class="flex place-items-center gap-4 pb-4 text-4xl text-sub">
       <i class={props.icon}></i>
       {props.text}
     </h2>
@@ -22,7 +22,7 @@ function H2(props: { icon: string; text: string }): JSXElement {
 
 function H3(props: { icon: string; text: string }): JSXElement {
   return (
-    <h3 class="text-sub flex place-items-center gap-2 pb-2">
+    <h3 class="flex place-items-center gap-2 pb-2 text-sub">
       <i class={props.icon}></i>
       {props.text}
     </h3>
@@ -49,7 +49,7 @@ export function AboutPage(): JSXElement {
   return (
     <Show when={isOpen}>
       <div class="content-grid grid gap-8">
-        <section class="text-sub text-center">
+        <section class="text-center text-sub">
           Created with love by Miodec.
           <br />
           <a href="#supporters_title">Supported</a> and{" "}
@@ -153,7 +153,7 @@ export function AboutPage(): JSXElement {
               />
             )}
           </AsyncContent>
-          <div class="text-sub text-right text-xs">
+          <div class="text-right text-xs text-sub">
             distribution of time 60 leaderboard results (wpm)
           </div>
         </section>

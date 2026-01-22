@@ -1,4 +1,4 @@
-import type { Assertion, AsymmetricMatchersContaining } from "vitest";
+import type { Assertion, AsymmetricMatchersContaining } from "vite-plus/test";
 import { TestActivityDay } from "../src/ts/elements/test-activity-calendar";
 
 interface ActivityDayMatchers<R = TestActivityDay> {
@@ -11,7 +11,7 @@ interface ActivityDayMatchers<R = TestActivityDay> {
 /// <reference types="vitest" />
 import "@testing-library/jest-dom";
 
-declare module "vitest" {
+declare module "vite-plus/test" {
   interface Assertion<T = any> extends ActivityDayMatchers<T> {}
   interface AsymmetricMatchersContaining extends ActivityDayMatchers {}
 }

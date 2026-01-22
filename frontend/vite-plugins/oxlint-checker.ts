@@ -1,4 +1,4 @@
-import { Plugin, ViteDevServer, normalizePath } from "vite";
+import { Plugin, ViteDevServer, normalizePath } from "vite-plus";
 import { spawn, execSync, ChildProcess } from "child_process";
 import { fileURLToPath } from "url";
 

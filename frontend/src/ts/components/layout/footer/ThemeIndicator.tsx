@@ -41,7 +41,7 @@ export function ThemeIndicator(): JSXElement {
     >
       <div class="relative">
         <Show when={getThemeIndicator().isFavorite}>
-          <i class="fas fa-star bg-bg absolute top-[-0.5em] right-[-0.5em] rounded-full p-[0.25em] text-[0.5em]"></i>
+          <i class="fas fa-star absolute top-[-0.5em] right-[-0.5em] rounded-full bg-bg p-[0.25em] text-[0.5em]"></i>
         </Show>
         <i class="fas fa-fw fa-palette"></i>
       </div>

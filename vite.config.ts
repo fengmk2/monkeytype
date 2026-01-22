@@ -1,0 +1,54 @@
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  fmt: {
+    $schema:
+      "https://raw.githubusercontent.com/oxc-project/oxc/refs/heads/main/npm/oxfmt/configuration_schema.json",
+    printWidth: 80,
+    tabWidth: 2,
+    useTabs: false,
+    htmlWhitespaceSensitivity: "ignore",
+    endOfLine: "lf",
+    trailingComma: "all",
+    ignorePatterns: [
+      "pnpm-lock.yaml",
+      "node_modules",
+      ".turbo",
+      "dist",
+      "build",
+      "logs",
+      "coverage",
+      "*.md",
+    ],
+    overrides: [
+      {
+        files: ["**/*.tsx"],
+        options: {
+          experimentalTailwindcss: {
+            stylesheet: "./frontend/src/styles/tailwind.css",
+            attributes: ["cn"],
+            functions: ["cn"],
+          },
+          experimentalSortImports: {
+            groups: [
+              ["side-effect"],
+              ["builtin"],
+              ["external", "external-type"],
+              ["internal", "internal-type"],
+              ["parent", "parent-type"],
+              ["sibling", "sibling-type"],
+              ["index", "index-type"],
+            ],
+          },
+        },
+      },
+    ],
+  },
+  lint: {
+    ignorePatterns: ["node_modules", "dist", ".turbo"],
+    extends: [
+      "./packages/oxlint-config/index.jsonc",
+      // "@monkeytype/oxlint-config"
+    ],
+  },
+});

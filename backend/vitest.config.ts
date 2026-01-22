@@ -1,4 +1,4 @@
-import { defineConfig, UserWorkspaceConfig } from "vitest/config";
+import { defineConfig, UserWorkspaceConfig } from "vite-plus";
 
 export const projects: UserWorkspaceConfig[] = [
   {

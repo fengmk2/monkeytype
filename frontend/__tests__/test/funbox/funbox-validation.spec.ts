@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, vi } from "vitest";
+import { describe, it, expect, afterEach, vi } from "vite-plus/test";
 import { canSetConfigWithCurrentFunboxes } from "../../../src/ts/test/funbox/funbox-validation";
 
 import * as Notifications from "../../../src/ts/elements/notifications";

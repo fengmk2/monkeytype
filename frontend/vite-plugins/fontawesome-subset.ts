@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "vite-plus";
 import * as fs from "fs";
 import { createRequire } from "module";
 import * as path from "path";

@@ -2,7 +2,7 @@ import request from "supertest";
 import app from "../../src/app";
 import { ObjectId } from "mongodb";
 import { mockBearerAuthentication } from "./auth";
-import { beforeEach } from "vitest";
+import { beforeEach } from "vite-plus/test";
 
 export function setup() {
   const mockApp = request(app);

@@ -1,0 +1,19 @@
+import { defineConfig } from "vite-plus";
+
+export default defineConfig({
+  lint: {
+    ignorePatterns: ["node_modules", "__migration__", "dist", ".turbo"],
+    extends: [
+      "../packages/oxlint-config/index.jsonc",
+      // "@monkeytype/oxlint-config"
+    ],
+    overrides: [
+      {
+        files: ["src/**/*.ts"],
+        rules: {
+          "import/no-cycle": "off", //todo: fix cycles and turn this on
+        },
+      },
+    ],
+  },
+});

@@ -1,4 +1,4 @@
-import { Plugin } from "vite";
+import { Plugin } from "vite-plus";
 import { readdirSync, readFileSync } from "fs";
 import { TextEncoder } from "util";
 import { createHash } from "crypto";

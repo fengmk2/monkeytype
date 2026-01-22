@@ -15,7 +15,7 @@ export function Overlays(): JSXElement {
       <button
         type="button"
         id="commandLineMobileButton"
-        class="bg-main text-bg fixed bottom-8 left-8 z-99 hidden h-12 w-12 rounded-full text-center leading-12"
+        class="fixed bottom-8 left-8 z-99 hidden h-12 w-12 rounded-full bg-main text-center leading-12 text-bg"
         onClick={() => {
           showModal("Commandline");
         }}

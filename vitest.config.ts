@@ -1,4 +1,4 @@
-import { defineConfig, UserWorkspaceConfig } from "vitest/config";
+import { defineConfig, UserWorkspaceConfig } from "vite-plus";
 import { projects as backendProjects } from "./backend/vitest.config";
 import { projects as frontendProjects } from "./frontend/vitest.config";
 

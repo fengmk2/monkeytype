@@ -4,16 +4,16 @@
   "private": true,
   "license": "GPL-3.0",
   "scripts": {
-    "lint": "oxlint . --type-aware --type-check && oxlint -c .oxlintrc-plugin.json",
-    "lint-fast": "oxlint .",
+    "lint": "vite lint . --type-aware --type-check && vite lint -c .oxlintrc-plugin.json",
+    "lint-fast": "vite lint .",
     "build": "npm run gen-docs && tsc --build",
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
     "ts-check": "tsc --noEmit",
     "start": "node ./dist/server.js",
-    "test": "vitest run --project=unit",
-    "integration-test": "vitest run --project=integration --project=integration-isolated",
-    "test-coverage": "vitest run --coverage",
+    "test": "vite test run --project=unit",
+    "integration-test": "vite test run --project=integration --project=integration-isolated",
+    "test-coverage": "vite test run --coverage",
     "dev": "concurrently -p none \"tsx watch --clear-screen=false --inspect ./src/server.ts\" \"tsc --preserveWatchOutput --noEmit --watch\"  \"esw src/ -w --ext .ts --cache --color\"",
     "docker-db-only": "docker compose -f docker/compose.db-only.yml up",
     "docker": "docker compose -f docker/compose.yml up",
@@ -80,16 +80,15 @@
     "@vitest/coverage-v8": "4.0.15",
     "concurrently": "8.2.2",
     "openapi3-ts": "2.0.2",
-    "oxlint": "1.40.0",
-    "oxlint-tsgolint": "0.11.1",
     "readline-sync": "1.4.10",
     "supertest": "7.1.4",
     "testcontainers": "11.11.0",
     "tsx": "4.16.2",
     "typescript": "5.9.3",
-    "vitest": "4.0.15"
+    "vite-plus": "catalog:",
+    "vitest": "catalog:"
   },
   "engines": {
-    "node": "24.11.0 || 22.21.0"
+    "node": "24.11.0 || >=22.21.0"
   }
 }

@@ -1,4 +1,11 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import {
+  describe,
+  it,
+  expect,
+  beforeEach,
+  afterEach,
+  vi,
+} from "vite-plus/test";
 import { Response } from "express";
 import { verifyPermissions } from "../../src/middlewares/permission";
 import { EndpointMetadata } from "@monkeytype/contracts/util/api";
